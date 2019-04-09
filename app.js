@@ -10,7 +10,7 @@ form.addEventListener('submit', (event) => {
 
 
 const searchMovies = (query) => {
-  fetch(`http://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
+  fetch(`https://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
     .then(response => response.json())
     .then((data) => {
       data.Search.forEach((result) => {
